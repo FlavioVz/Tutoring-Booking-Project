@@ -1,0 +1,194 @@
+/* global page styles*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #15161d;
+  color: white;
+}
+
+.page,
+.dashboard-page {
+  min-height: 100vh;
+  padding: 30px;
+}
+
+/* shared layouts*/
+.center-page,
+.home-card,
+.dashboard-card {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-card,
+.login-card,
+.dashboard-card,
+.info-box,
+.slot-card {
+  border: 1px solid #555;
+  background: #20222b;
+  border-radius: 14px;
+}
+
+/* home page */
+.home-card {
+  max-width: 900px;
+  margin-top: 40px;
+  padding: 35px;
+}
+
+.home-card h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.home-subtitle {
+  font-size: 20px;
+  color: #d0d0d0;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.home-grid,
+.slot-grid,
+.admin-two-column,
+.tutor-slot-form {
+  display: grid;
+  gap: 20px;
+}
+
+.home-grid,
+.slot-grid,
+.admin-two-column,
+.tutor-slot-form {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.info-box,
+.slot-card {
+  background: #2b2d38;
+  padding: 20px;
+  text-align: left;
+}
+
+.info-box h2 {
+  margin-top: 0;
+}
+
+.info-box p,
+.home-subtitle {
+  color: #d0d0d0;
+  line-height: 1.5;
+}
+
+/* login page */
+.login-card {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 25px;
+}
+
+.center-page {
+  max-width: 800px;
+}
+
+.login-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.login-row input {
+  width: 330px;
+}
+
+/* general buttons */
+input,
+select,
+button {
+  padding: 9px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  background: #777;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #8a8a8a;
+}
+
+.primary-button {
+  padding: 12px 22px;
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.signup-form,
+.tutor-form-column {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.top-button,
+.logout-wrapper {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* dashboard */
+.dashboard-card {
+  max-width: 950px;
+  margin-bottom: 25px;
+  padding: 30px;
+}
+
+.search-input {
+  width: 350px;
+  max-width: 90%;
+  margin: 15px 0 25px;
+}
+
+/* slot and appointment cards*/
+.slot-card p {
+  margin: 8px 0;
+}
+
+.card-button {
+  margin-top: 12px;
+  width: 100%;
+}
+
+/* tutor layout*/
+.full-width,
+.tutor-slot-form .full-width {
+  grid-column: 1 / -1;
+}
+
+.tutor-form-column {
+  text-align: left;
+}
+
+.tutor-slot-form .tutor-form-column:first-child {
+  margin-top: 22px;
+}
+
+/* status colors*/
+.status-booked {
+  color: #ffd166;
+}
+
+.status-confirmed {
+  color: #8df58d;
+}
+
+.status-cancelled {
+  color: #ff8a8a;
+}
