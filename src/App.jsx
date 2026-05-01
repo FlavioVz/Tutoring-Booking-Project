@@ -78,7 +78,7 @@ function HomePage({setPage}) {
   return(
     <div className="page">
       <div className="home-card">
-        <h1>Tutoring Booking Application</h1>
+        <h1>StudySlot</h1>
         <p className="home-subtitle">
           A simple application for students to find tutors, book appointments,
           and manage tutoring sessions.
